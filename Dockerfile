@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3000 9229
 
-CMD ["node", "index.js", "-h", "0.0.0.0", "-p", "3000", "-c", "./cache"]
+CMD ["npm", "start"]

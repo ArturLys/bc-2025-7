@@ -1,21 +1,21 @@
 {
-  "name": "backend-course-2025-6",
+  "name": "backend-course-2025-7",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js -h 0.0.0.0 -p  -c ./cache",
-    "start": "node index.js -h 0.0.0.0 -p  -c ./cache"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "debug": "nodemon --inspect=0.0.0.0:9229 index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "commander": "^14.0.3",
     "dotenv": "^17.4.0",
     "express": "^5.2.1",
     "multer": "^2.1.1",
+    "pg": "^8.13.0",
     "superagent": "^10.3.0"
   },
   "devDependencies": {
